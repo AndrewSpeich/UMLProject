@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="40d9b66f-4b1b-4bc7-94c9-4f0ac28d5ea8" name="UMLClassDiagram1" linkedPackageId="30bbdec4-3a52-464b-af27-d9074c75f6c2" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="ab959182-fa46-4090-a468-087dbd22d047">
+      <profileInstance Id="155c90f5-43b0-47e6-bc38-947dea8ce1b3" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="25941d58-7d99-407d-9e9d-f3816659c395">
+      <profileInstance Id="8ab06deb-cec1-4c59-acd3-b2df01d24fb9" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ac0c6c13-52d0-4855-822c-33f45df67a01" name="BaseModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="454292f7-3660-4319-9175-279b9245cebf" />
+        <ownedAttributesInternal>
+          <property Id="03f89f9c-adfd-4039-b968-a01622226ed7" name="double battlevel" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d68d3612-ce4c-4f58-a6e0-8ed61419ba02" />
+          </property>
+          <property Id="e5a339b8-cf99-4516-a321-84f0ae3ccd27" name="String serialnum" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dd2c4470-6390-4e19-8d1b-0eba2ac77e42" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="40849917-0b68-4229-95e1-8568382ccc67" name="move" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a14b8276-1111-4e92-ad20-e33687e51c31" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="1a9a3f49-f255-4fbc-9140-b6b9ff6dfe9c" name="distance" direction="In" isUnique="false">
+                  <elementDefinition Id="8ed6e4fb-dd82-440c-a96f-be332b0d2254" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="8a049f11-568f-4513-8b4c-e2d047b1946c" name="chargeBat" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="be8c535f-b885-449a-b85f-3ef28f6a2922" />
+          </operation>
+          <operation Id="309c018e-4035-4d22-9f57-b5961dbffa63" name="getBatLevel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c8024f87-9bc2-4ebd-ac7c-8790718139d9" />
+          </operation>
+          <operation Id="ac30e4c0-1c6f-456e-bc7f-1d7dfa74ef45" name="getSerial" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2d79e357-2ec0-4ba4-aafc-8041a1445022" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c62bd889-9d79-4da8-9f99-8196cd1f0aad" name="MasterRobit" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b40d771d-0080-4af7-af81-2939d1ba3aea" />
+        <generalsInternal>
+          <generalization Id="be113970-88e4-475c-9367-d3e5f1b6c966" isSubstitutable="false">
+            <classMoniker Id="ac0c6c13-52d0-4855-822c-33f45df67a01" LastKnownName="BaseModel" />
+            <elementDefinition Id="dc2c449a-7305-4f15-a96d-276462dd1ff3" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="815f7423-f9d8-44b9-b38a-4d829ad03afe" name="ArrayList(BaseModel)" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e139dcea-1a1e-4acc-9e5e-c970d90131e8" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="68c8e211-4508-4683-8e38-f41cfa477fce" name="connectBot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c2f8284d-ab39-4824-865c-1bf0aa68253d" />
+          </operation>
+          <operation Id="3a40dc95-c6ed-4741-b1af-cacb44281be7" name="disconnectBot" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8d7b7e6d-1527-43ce-be35-220fa57c7420" />
+          </operation>
+          <operation Id="12f582e5-cf6e-43b6-adc0-430dd302ad80" name="viewConnections" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="161b31ae-7c76-47e9-8120-bbf6601f4759" />
+          </operation>
+          <operation Id="1453cf45-250c-4082-bba2-b34f66a713aa" name="activate" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c59c3faa-8e9d-482a-9d1d-6edce529d0fc" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="52799ff9-0dbc-420a-bfac-1b4fa590582e" name="BaseModel" direction="In" isUnique="false">
+                  <elementDefinition Id="652a0c20-2ab3-4ee3-8e9d-47d8c8ec65a3" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation Id="7e593842-384d-45ea-abb1-d49ccdcb570d" name="checkBat" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="20ed4e51-e2fe-4c27-971a-ce16462bccd9" />
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter Id="7cfb8c15-5e18-4c21-9c1b-183882b2ef9b" name="BaseModel" direction="In" isUnique="false">
+                  <elementDefinition Id="278955ea-47e6-4e54-9396-832fdc0d5e2b" />
+                </parameter>
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7e2cea22-0aaa-4ba4-889b-5680379f4a97" name="BendingUnit" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0c0f7fd9-1224-4cef-b322-11d28e1838e8" />
+        <generalsInternal>
+          <generalization Id="39708a0e-364b-46df-9342-4ae930ff2549" isSubstitutable="false">
+            <classMoniker Id="ac0c6c13-52d0-4855-822c-33f45df67a01" LastKnownName="BaseModel" />
+            <elementDefinition Id="d74bb6f2-d2f2-4e0c-92b2-503403306fc5" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation Id="68ae08d3-f2e8-4859-89b0-58403454fd21" name="bendGirder" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8a387cfd-2a35-42c0-8464-0fdbac07e14d" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="30bbdec4-3a52-464b-af27-d9074c75f6c2" name="RobotUML">
+    <elementDefinition Id="2c5776b1-80c0-45cf-8053-d435e3723555" />
+  </package>
+</logicalClassDesignerModel>

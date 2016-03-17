@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<componentModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/LogicalClassDesigner" xmlns:dm10="http://schemas.microsoft.com/dsltools/SimpleShapesModel" xmlns:dm11="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ActivityDesigner" dslVersion="1.0.0.0" Id="c564338d-3755-427f-94ff-d2d2984a6ff7" name="UMLComponentDiagram1" linkedPackageId="4f7d9447-9803-4037-b459-546d79ce4c8f" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/ComponentDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="1a2c86d8-4b81-4725-91dc-53e29f1b42ec">
+      <profileInstance Id="41a50c35-ed3d-4509-83a8-5afc3bd01438" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3937de9f-31fd-432e-b400-79063809f041">
+      <profileInstance Id="6ff08ca3-b994-4090-b675-6699cabfd212" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <componentModelHasComponents>
+      <component Id="bf89f5e4-f7ab-4803-8043-8ec853ce8a00" name="BaseModel" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="19d435c0-b7ee-48ef-a760-13ac4c2c70ae" />
+        <ownedAttributesInternal>
+          <part Id="e2b74fe1-7146-4348-9538-286e4ef5ffe0" name="getSerial" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="true">
+            <elementDefinition Id="bc72f8d0-9ce0-4e74-a0bb-421c68c6b3b6" />
+            <type_NamedElement>
+              <componentMoniker Id="9ff8ec71-1195-48c2-be07-4f3628486d9e" LastKnownName="Component3" />
+            </type_NamedElement>
+          </part>
+        </ownedAttributesInternal>
+      </component>
+    </componentModelHasComponents>
+    <componentModelHasComponents>
+      <component Id="9ff8ec71-1195-48c2-be07-4f3628486d9e" name="Component3" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b54efe01-7d77-4c88-8d3b-6bbebc59908a" />
+      </component>
+    </componentModelHasComponents>
+  </packagedElements>
+  <package Id="4f7d9447-9803-4037-b459-546d79ce4c8f" name="RobotUML">
+    <elementDefinition Id="2c5776b1-80c0-45cf-8053-d435e3723555" />
+  </package>
+</componentModel>
